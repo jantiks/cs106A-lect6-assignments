@@ -13,8 +13,8 @@ public class problem1 extends GraphicsProgram {
 
         for (int i = 0; i < NROWS; i++) {
             for (int j = 0; j < NCOLS; j++) {
-                int x = i * sqrSize;
-                int y = j * sqrSize;
+                int x = j * sqrSize;
+                int y = i * sqrSize;
                 GRect rect = new GRect(x,y,sqrSize,sqrSize);
                 rect.setFilled((i + j) % 2 != 0);
                 add(rect);
